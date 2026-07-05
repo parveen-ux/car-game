@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Racing Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🏎️ Car Racing Game</h1>
+
+<div class="game">
+
+    <div class="road-line line1"></div>
+    <div class="road-line line2"></div>
+    <div class="road-line line3"></div>
+
+    <div id="enemy1" class="enemy"></div>
+<div id="enemy2" class="enemy"></div>
+<div id="enemy3" class="enemy"></div>
+
+    <div id="player"></div>
+
+</div>
+<div class="info">
+    <h2 id="score">Score : 0</h2>
+    <h2 id="health">Health : ❤️❤️❤️</h2>
+<h2 id="highscore">High Score : 0</h2>  
+</div>
+<div id="speed">Speed : 5</div>
+
+<div class="mobile-controls">
+  <button onclick="moveLeft()">⬅️</button>
+  <button onclick="startGame()">Start</button>
+  <button onclick="moveRight()">➡️</button>
+</div>
+<button id="restart" onclick="location.reload()">Restart Game</button>
+<button id="pauseBtn">Pause</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
